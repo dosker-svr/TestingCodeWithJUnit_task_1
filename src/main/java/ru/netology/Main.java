@@ -1,3 +1,4 @@
+package ru.netology;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -50,7 +51,7 @@ public class Main {
 //        System.out.println(countIpsDb.containIpInMapIps("1.10.186.173"));
 
 //        String villainIp = countIpsDb.ipWithMaxCountVisits();
-//        User villain = usersDb.villain(villainIp);
+//        ru.netology.User villain = usersDb.villain(villainIp);
 
         System.out.println("Кто же негодяй? Это :\n");
         System.out.println(usersDb.getVillain(countIpsDb));
