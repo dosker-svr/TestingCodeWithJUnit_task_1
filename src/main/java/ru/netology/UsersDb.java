@@ -1,8 +1,9 @@
+package ru.netology;
 
 import java.util.*;
 
 public class UsersDb {
-    Map<String, User> usersDb = new TreeMap<>(); // таблица User, key - ID юзера, value - сам user
+    Map<String, User> usersDb = new TreeMap<>(); // таблица ru.netology.User, key - ID юзера, value - сам user
 
     Map<String, Set<String>> ipsForUser = new HashMap<>(); // Мапа где храним множества ip по каждому user. key - ID юзера, value - множество ip-шников юзера
 
@@ -57,8 +58,8 @@ public class UsersDb {
     }
 
 //    public void addSetIpsToMap() {
-//        for (Map.Entry<String, User> entry : usersDb.entrySet()) {
-//            User ipsUser = entry.getValue();
+//        for (Map.Entry<String, ru.netology.User> entry : usersDb.entrySet()) {
+//            ru.netology.User ipsUser = entry.getValue();
 //            ipsForUser.put(ipsUser.getId(), ipsUser.getSetIp());
 //        }
 //    }
@@ -71,7 +72,7 @@ public class UsersDb {
 //        }
 //    }
 
-//    public User villain(String villainIp) {
+//    public ru.netology.User villain(String villainIp) {
 //        String villainID = "id";
 //        for (Map.Entry<String, Set<String>> entry : ipsForUser.entrySet()) { // цикл прохождения по Map ipsForUser
 //            for (String string : entry.getValue()) {
@@ -83,25 +84,25 @@ public class UsersDb {
 //        return usersDb.get(villainID);
 //    }
 
-//    public void addIpInSetOfUserIps(User user) {
-//        User userInMap = usersDb.get(user.getId()); // берём по ключу user из Map
+//    public void addIpInSetOfUserIps(ru.netology.User user) {
+//        ru.netology.User userInMap = usersDb.get(user.getId()); // берём по ключу user из Map
 //        userInMap.putIpInSet(user.getIp()); // этому пользователю добавляем ip
 //    }
 
-//    public boolean containsUserInMap(User user) {
+//    public boolean containsUserInMap(ru.netology.User user) {
 //        return usersDb.containsValue(user);
 //    }
 
 //    public void printMap() {
 //        System.out.println("База клиентов:\n" +
 //                "\t\t\tid, ФИО, Адрес, ip");
-//        for (Map.Entry<String, User> entry : usersDb.entrySet()) {
+//        for (Map.Entry<String, ru.netology.User> entry : usersDb.entrySet()) {
 //            System.out.println(entry);
 //        }
 //    }
 
 //    public void addIpInSetOfUserIps(String userID, String userIP) {
-//        User userInMap = usersDb.get(userID); // берём по ключу user из Map
+//        ru.netology.User userInMap = usersDb.get(userID); // берём по ключу user из Map
 //        userInMap.putIpInSet(userIP); // этому пользователю добавляем ip
 //        ipsForUser.put(userID, userInMap.getSetIp());
 //    }

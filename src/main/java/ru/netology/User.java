@@ -1,5 +1,4 @@
-
-import java.util.*;
+package ru.netology;
 
 public class User {
 //    private Set<String> ipSet;
